@@ -1,2 +1,2 @@
 # Player-API
-https://musakius.github.io
+https://musakius.github.io/player_api/.
