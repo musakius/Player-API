@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework</title>
+    <link href="../style/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/flatly/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">
+                    My Player
+                </a>
+            </div>
+        </nav>
+    </header>
+    <section class="controles" id="player_user">
+        <div class="player-local">
+            <audio></audio>
+            <div class="progress">
+                <progress class="progress1" id="progress" value="0" min="0"></progress>
+            </div>
+            <div class="block_play">
+                <i class="fas fa-play" id="play"></i>
+                <div class="block_volume">
+                    <i id="volume_i" class="fas fa-volume-down"></i>
+                    <progress id="progress2" class="progress2" value="100" min="0"></progress>
+                </div>
+            </div>
+            <span id="time2" class="time2">00:00</span>
+        </div>
+        <div class="block_file">
+            <input class="file" id="file" type="file" accept="audio/*" ondrop="drop(e)" ondragover="allowDrop(e)" />
+        </div>
+    </section>
+    <script src="../script/script.js"></script>
+    <script src="../script/player-local.js"></script>
+</body>
+
+</html>
+<!-- <i class="fas fa-volume-down" onclick="setMinusVolume()"></i>
+<i class="fas fa-volume-up" onclick="setPlusVolume()"></i> -->
+<!-- <i class="fas fa-play" onclick="playAudio()"></i>
+<i class="fas fa-pause" onclick="pauseAudio()"></i> -->
